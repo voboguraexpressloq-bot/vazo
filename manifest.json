@@ -1,20 +1,35 @@
 {
-  "name": "Free IPTV Pro - 800+ Live TV Channels",
-  "short_name": "FreeIPTVPro",
-  "description": "Watch 800+ FREE HD TV channels live - News, Sports, Movies, Bangladeshi TV, Entertainment. No registration required.",
+  "name": "Free IPTV - 700+ Live Channels",
+  "short_name": "FreeIPTV",
+  "description": "Watch 700+ free live TV channels including news, sports, entertainment from official sources",
   "start_url": "/",
   "display": "fullscreen",
-  "background_color": "#0a0a0a",
-  "theme_color": "#ff4444",
+  "background_color": "#0f0f0f",
+  "theme_color": "#ff6b00",
   "orientation": "any",
-  "categories": ["entertainment", "news", "sports"],
-  "lang": "en",
-  "scope": "/",
+  "categories": ["entertainment", "video", "news"],
   "icons": [
     {
-      "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyIiBoZWlnaHQ9IjE5MiIgdmlld0JveD0iMCAwIDE5MiAxOTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxOTIiIGhlaWdodD0iMTkyIiBmaWxsPSIjZmY0NDQ0Ii8+Cjx0ZXh0IHg9Ijk2IiB5PSIxMDAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSI0OCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlRWPC90ZXh0Pgo8L3N2Zz4K",
+      "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyIiBoZWlnaHQ9IjE5MiIgdmlld0JveD0iMCAwIDE5MiAxOTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxOTIiIGhlaWdodD0iMTkyIiByeD0iMjQiIGZpbGw9IiNGRjZCMDAiLz4KPHBhdGggZD0iTTc2IDY0SDEwOFYxMjhINzZWNjRaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNMTE2IDY0SDE0OFYxMjhIMTE2VjY0WiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTg0IDE0NEgxMjBWMTYwSDg0VjE0NFoiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPgo=",
       "sizes": "192x192",
-      "type": "image/svg+xml"
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiByeD0iNjQiIGZpbGw9IiNGRjZCMDAiLz4KPHBhdGggZD0iTTIwMCAxNzBIMjg4VjM0MEgyMDBWMTcwWiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTMwOCAxNzBIMzk2VjM0MEgzMDhWMTcwWiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTIyNCAzODRIMzY0VjQ0MEgyMjRWMzg0WiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg==",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
     }
-  ]
+  ],
+  "screenshots": [
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwMCIgaGVpZ2h0PSI2MDAiIHZpZXdCb3g9IjAgMCAxMjAwIDYwMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjEyMDAiIGhlaWdodD0iNjAwIiBmaWxsPSIjMGYwZjBmIi8+CjxyZWN0IHg9IjEwMCIgeT0iNTAiIHdpZHRoPSIxMDAwIiBoZWlnaHQ9IjMwMCIgZmlsbD0iIzJkMmQyZCIvPgo8cmVjdCB4PSIxMDAiIHk9IjQwMCIgd2lkdGg9IjMwMCIgaGVpZ2h0PSIxNTAiIGZpbGw9IiMxYTFhMWEiLz4KPHJlY3QgeD0iNDUwIiB5PSI0MDAiIHdpZHRoPSIzMDAiIGhlaWdodD0iMTUwIiBmaWxsPSIjMWExYTFhIi8+CjxyZWN0IHg9IjgwMCIgeT0iNDAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjE1MCIgZmlsbD0iIzFhMWExYSIvPgo8dGV4dCB4PSI2MDAiIHk9IjM1IiBmaWxsPSIjZmY2YjAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjI0IiBmb250LWZhbWlseT0iQXJpYWwiPkZyZWUgSVBUViAtIDcwMCsgTGl2ZSBDaGFubmVsczwvdGV4dD4KPC9zdmc+",
+      "sizes": "1200x600",
+      "type": "image/svg+xml",
+      "form_factor": "wide"
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false
 }
