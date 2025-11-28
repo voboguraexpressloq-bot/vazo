@@ -1,0 +1,85 @@
+{
+  "nuclear_iptv": {
+    "version": "2.0.0",
+    "codename": "ULTRA_POWERFUL",
+    "deploy_date": "2024-01-01",
+    "maintenance_mode": false
+  },
+  "security": {
+    "anti_ban": true,
+    "copyright_protection": true,
+    "dev_tools_block": true,
+    "source_protection": true,
+    "disclaimer": "All channels are official free public streams. No copyrighted content is hosted or streamed on this platform."
+  },
+  "monetization": {
+    "target_rpm": 300,
+    "ad_networks": [
+      {
+        "name": "PropellerAds",
+        "types": ["in_page_push", "pop_under", "native"],
+        "status": "active"
+      },
+      {
+        "name": "RichAds", 
+        "types": ["push_notification", "native"],
+        "status": "active"
+      },
+      {
+        "name": "EvaDav",
+        "types": ["native", "push"],
+        "status": "active"
+      }
+    ],
+    "cpa_offers": {
+      "enabled": true,
+      "redirect_time": 45,
+      "average_payout": 25.0
+    },
+    "background_impressions": {
+      "enabled": true,
+      "interval": 900,
+      "max_per_session": 100
+    }
+  },
+  "streaming": {
+    "total_channels": 800,
+    "categories": [
+      "news",
+      "entertainment", 
+      "sports",
+      "bangladesh",
+      "music",
+      "kids",
+      "documentary"
+    ],
+    "sources": [
+      "pluto_tv",
+      "samsung_tv_plus", 
+      "xumo_play",
+      "tubi_tv_live",
+      "plex_live",
+      "redbox",
+      "stirr",
+      "distro_tv",
+      "local_now",
+      "official_free"
+    ],
+    "quality": {
+      "default": "auto",
+      "fallback": "480p",
+      "max_quality": "1080p"
+    }
+  },
+  "user_experience": {
+    "auto_play": true,
+    "default_volume": 80,
+    "theme": "dark",
+    "language": "en",
+    "fake_viewers": {
+      "enabled": true,
+      "base_count": 15000,
+      "fluctuation": 7000
+    }
+  }
+}
