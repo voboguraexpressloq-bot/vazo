@@ -1,34 +1,105 @@
-<!-- Update the player section in index.html -->
-<section class="player-section">
-    <div class="player-container">
-        <div id="videoPlayer" class="video-player">
-            <!-- Player will be dynamically loaded here -->
-            <div class="player-placeholder">
-                <p>Select a channel to start watching</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free IPTV - 700+ Live Channels</title>
+    <meta name="description" content="Watch 700+ free live TV channels including news, sports, entertainment and more">
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-top">
+                <h1>📺 Free IPTV</h1>
+                <div class="live-counter">
+                    <span class="live-dot"></span>
+                    <span id="viewerCount">15,842 viewers online</span>
+                </div>
             </div>
-        </div>
-        
-        <!-- Player Overlay Ads -->
-        <div class="player-overlay">
-            <div class="overlay-ad" id="eva-native-ad"></div>
-            <div class="player-controls-ad">
-                <div id="richads-player-ad"></div>
+            <div class="ad-banner top-banner" id="topBanner">
+                <!-- Top banner ad -->
             </div>
+        </header>
+
+        <main>
+            <div class="player-section">
+                <div class="video-container">
+                    <video id="videoPlayer" class="video-js vjs-default-skin" controls preload="auto" width="100%" height="400">
+                        <p class="vjs-no-js">Please enable JavaScript to watch this video.</p>
+                    </video>
+                </div>
+                <div class="now-playing">
+                    <h3 id="currentChannel">Loading channel...</h3>
+                    <div class="ad-overlay" id="adOverlay">
+                        <!-- Overlay ad -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="channels-section">
+                <div class="search-bar">
+                    <input type="text" id="searchInput" placeholder="Search 700+ channels...">
+                    <button id="searchBtn">Search</button>
+                </div>
+                
+                <div class="categories">
+                    <button class="category-btn active" data-category="all">All Channels</button>
+                    <button class="category-btn" data-category="news">News</button>
+                    <button class="category-btn" data-category="entertainment">Entertainment</button>
+                    <button class="category-btn" data-category="sports">Sports</button>
+                    <button class="category-btn" data-category="bangladesh">Bangladesh</button>
+                </div>
+
+                <div class="channels-grid" id="channelsGrid">
+                    <!-- Channels will be loaded here -->
+                </div>
+            </div>
+        </main>
+
+        <div class="ad-banner bottom-banner" id="bottomBanner">
+            <!-- Bottom sticky banner -->
         </div>
-        
-        <!-- Fake Buffer Indicator -->
-        <div id="bufferIndicator" class="buffer-indicator">
-            <div class="spinner"></div>
-            <span>Loading channel...</span>
+
+        <div class="floating-ad" id="floatingAd">
+            <!-- Floating ad -->
         </div>
     </div>
 
-    <!-- Current Channel Info -->
-    <div class="channel-info">
-        <h3 id="currentChannelName">Select a channel to start watching</h3>
-        <div class="channel-meta">
-            <span id="currentCategory"></span>
-            <span id="currentViewers">Live</span>
+    <!-- Anti Adblock Warning -->
+    <div id="adblockWarning" class="adblock-warning">
+        <div class="warning-content">
+            <h3>⚠️ AdBlocker Detected</h3>
+            <p>Please disable your ad blocker to continue watching free TV. This service is supported by ads.</p>
+            <button onclick="location.reload()">I've disabled AdBlocker</button>
         </div>
     </div>
-</section>
+
+    <!-- Fake Update Popup -->
+    <div id="updatePopup" class="popup-overlay">
+        <div class="popup-content">
+            <h3>🔧 Player Update Required</h3>
+            <p>Your video player needs an urgent update to continue streaming.</p>
+            <button id="updateBtn">Update Now</button>
+        </div>
+    </div>
+
+    <!-- PWA Install Prompt -->
+    <div id="installPrompt" class="popup-overlay">
+        <div class="popup-content">
+            <h3>📱 Install Free IPTV App</h3>
+            <p>Install our app for better experience and offline access.</p>
+            <button id="installBtn">Install Now</button>
+            <button id="cancelInstall">Later</button>
+        </div>
+    </div>
+
+    <script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <script src="channels.js"></script>
+    <script src="ads.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
